@@ -78,7 +78,7 @@ export function useGroqRuntime() {
       } catch (error) {
         console.error("Groq Error:", error);
         yield {
-          content: [{ type: "text", text: "⚠️ Error connecting to Groq API. Check your API key." }],
+          content: [{ type: "text", text: "OPS! Network is slow..." }],
         };
       }
     },
