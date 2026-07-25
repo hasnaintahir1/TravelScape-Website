@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Navbar from './Compnonents/Navbar/Navbar'
 
-import Home from './Pages/Home'
+import Home from './Pages/Home/Home'
 import AiPLanner from './Pages/AI-Traveler-Planner/Ai'
 import Explore from './Pages/Explore/Explore'
 import Blog from './Pages/Blog/Blog'
