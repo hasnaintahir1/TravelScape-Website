@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 
 import Navbar from './Compnonents/Navbar/Navbar'
 
@@ -11,7 +11,13 @@ import Faq from './Pages/FAQ/Faq'
 import Group from './Pages/GroupTripPlanner/Group'
 import Road from './Pages/RoadTripPlanner/Road'
 
+import Footer from './Compnonents/Footer/Footer'
+
 const App = () => {
+  const location = useLocation();
+
+  const isAiPage = location.pathname === '/aiPlanner'
+
   return (
     <>
       <Navbar />
@@ -25,6 +31,7 @@ const App = () => {
         <Route path='/groupTrip' element={<Group />} />
         <Route path="/roadTrip" element={<Road />} />
       </Routes>
+    {!isAiPage &&  <Footer />}
     </>
   )
 }

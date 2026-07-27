@@ -1,4 +1,3 @@
-// src/Pages/Ai.jsx
 import React from "react";
 import { AssistantRuntimeProvider } from "@assistant-ui/react";
 import { useGroqRuntime } from "../../lib/groq";

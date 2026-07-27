@@ -1,0 +1,148 @@
+.footer {
+  width: 100%;
+  background-color: #21242b;
+  color: #a0a5b1;
+  padding: 5rem 2rem 3rem 2rem;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 280px;
+}
+
+.logoLink {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #a0a5b1;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Link Columns */
+.columnTitle {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: #8c92a0;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem 0;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.link {
+  color: #a0a5b1;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+/* Divider Line */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.08);
+  margin: 0 0 3rem 0;
+}
+
+/* Partners Section */
+.partnersSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.partnersLabel {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #6a707e;
+  text-transform: uppercase;
+}
+
+.partnerLogos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.partnerText {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.stripe { color: #635bff; font-family: sans-serif; font-size: 1.2rem; }
+.getYourGuide { color: #ff5533; font-size: 1rem; }
+.booking { color: #003580; background-color: #ffffff; padding: 2px 6px; border-radius: 2px; font-size: 0.95rem; }
+.partnerBadge { background-color: #ffffff; color: #111; padding: 3px 8px; border-radius: 3px; font-weight: bold; font-size: 0.75rem; }
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #6a707e;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .topGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .topGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .partnersSection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

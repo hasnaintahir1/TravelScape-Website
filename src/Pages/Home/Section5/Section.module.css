@@ -1,0 +1,79 @@
+.section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Small top uppercase tracking text */
+.subTitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: #999999;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+/* Quote styling */
+.quote {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.1rem;
+  line-height: 1.25;
+  color: #111111;
+  margin: 0 0 2.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.boldText {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.italicText {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Author caption */
+.author {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+  color: #777777;
+  margin: 0;
+}
+
+.authorTitle {
+  font-style: italic;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 1.5rem;
+  }
+
+  .quote {
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+
+  .subTitle {
+    margin-bottom: 1.8rem;
+  }
+
+  .author {
+    font-size: 0.85rem;
+  }
+}
