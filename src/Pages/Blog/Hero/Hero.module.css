@@ -1,0 +1,137 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.bgOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15); /* Soft overlay to pop the middle card */
+}
+
+/* Center Floating Split Card */
+.centerCard {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 4px solid #ffffff; /* Subtle outer white frame */
+  overflow: hidden;
+}
+
+/* Left Section: Typography */
+.textContent {
+  flex: 1;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.mainTitle {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 56px;
+  line-height: 0.95;
+  font-weight: 900;
+  color: #111111;
+  letter-spacing: -1px;
+  margin: 0 0 40px 0;
+  text-transform: uppercase;
+}
+
+.journalMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tagGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #666666;
+  font-weight: 600;
+}
+
+.latestTag {
+  color: #222222;
+}
+
+.dateTag {
+  color: #888888;
+}
+
+.articleTitle {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333333;
+  margin: 0;
+  font-weight: 500;
+  max-width: 280px;
+}
+
+.readBtn {
+  align-self: flex-start;
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #d1d1d1;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #222222;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.readBtn:hover {
+  background-color: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+/* Right Section: Image */
+.imageContent {
+  flex: 1;
+  min-height: 420px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .centerCard {
+    flex-direction: column-reverse;
+    max-width: 500px;
+  }
+
+  .imageContent {
+    min-height: 250px;
+  }
+
+  .textContent {
+    padding: 30px 24px;
+  }
+
+  .mainTitle {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+}

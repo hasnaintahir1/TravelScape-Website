@@ -1,0 +1,200 @@
+.sectionContainer {
+  width: 100%;
+  background-color: #f7f4ef;
+  padding: 60px 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+}
+
+.mainWrapper {
+  width: 100%;
+  max-width: 1140px;
+}
+
+/* Header */
+.header {
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  margin: 0 0 8px 0;
+}
+
+.subHeading {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.searchWrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.filterControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dropdownGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.filterSelect {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.pillTabs {
+  display: flex;
+  gap: 8px;
+}
+
+.pillBtn {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.activePill {
+  background: #222;
+  color: #fff;
+}
+
+/* Flexbox Layout (Grid ki jagah Flex) */
+.cardsFlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.cardItem,
+.ctaCard {
+  width: calc((100% - 48px) / 3); /* 3 Columns Layout */
+  box-sizing: border-box;
+}
+
+/* Card Style */
+.cardItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImageArea {
+  position: relative;
+  height: 280px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+  overflow: hidden;
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.cardTitle {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.cardDays {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 4px 0 4px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* CTA Card */
+.ctaCard {
+  height: 280px;
+  border-radius: 14px;
+  background: transparent;
+  border: 1px solid rgb(207, 205, 205);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.ctaTitle {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+
+.ctaDesc {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.ctaBtn {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cardItem,
+  .ctaCard {
+    width: calc((100% - 24px) / 2); /* Tablet par 2 Columns */
+  }
+}
+
+@media (max-width: 600px) {
+  .cardItem,
+  .ctaCard {
+    width: 100%; /* Mobile par 1 Column */
+  }
+}

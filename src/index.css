@@ -4,6 +4,7 @@
 @import "@fontsource-variable/geist";
 @import "tw-shimmer";
 /* Global Reset for Scrolling */
+
 html, body, #root {
   margin: 0;
   padding: 0;
