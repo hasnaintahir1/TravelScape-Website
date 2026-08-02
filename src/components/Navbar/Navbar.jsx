@@ -31,16 +31,10 @@ const Navbar = () => {
                         </Link>
                         <Link to='/aiPlanner' onClick={menuClose}>AI Travel Planner</Link>
                     </div>
-                    <Link to='explore' onClick={menuClose}>Explore</Link>
-                    <Link to='blog' onClick={menuClose}>Blog</Link>
-                    <Link to='faq' onClick={menuClose}>FAQ</Link>
-                    <div className={styles.dropdown}>
-                        <Link>Use Case</Link>
-                        <div className={styles.dropdownMenu}>
-                            <Link to='/groupTrip' onClick={menuClose}>Group Trip Planner</Link>
-                            <Link to='/roadTrip' onClick={menuClose}>Road Trip Planner</Link>
-                        </div>
-                    </div>
+                    <Link to='/explore' onClick={menuClose}>Explore</Link>
+                    <Link to='/blog' onClick={menuClose}>Blog</Link>
+                    <Link to='/faq' onClick={menuClose}>FAQ</Link>
+                    <Link to='/groupTrip' onClick={menuClose}>Group Trip</Link>
                 </div>
                 <div className={styles.hamburger} onClick={()=> setMenuOpen(!menuOpen)}>
                     ☰

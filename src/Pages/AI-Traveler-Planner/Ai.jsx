@@ -9,8 +9,8 @@ export default function AiPage() {
 
   return (
 
-    <div className="h-[92vh] w-full bg-[rgb(249, 245, 237)] flex flex-col justify-end items-center relative">
-      <div className="relative flex h-[80vh] w-full max-w-full flex-col overflow-hidden">
+    <div className="h-[88vh] w-full bg-[rgb(249, 245, 237)] flex flex-col justify-end items-center relative">
+      <div className="relative flex h-full w-full max-w-full flex-col overflow-hidden">
         <AssistantRuntimeProvider runtime={runtime}>
           <Thread />
         </AssistantRuntimeProvider>

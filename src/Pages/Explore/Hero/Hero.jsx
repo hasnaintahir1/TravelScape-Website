@@ -2,11 +2,16 @@ import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
-// Swiper Styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 import styles from './Hero.module.css';
+
+import img1 from '../../../assets/exploreHero1.jpg'
+import img2 from '../../../assets/exploreHero2.jpg'
+import img3 from '../../../assets/exploreHero3.jpg'
+import img4 from '../../../assets/exploreHero4.jpg'
+import img5 from '../../../assets/exploreHero5.jpg'
 
 const slidesData = [
   {
@@ -16,8 +21,7 @@ const slidesData = [
     description:
       'From the ruins of Rome to the canals of Venice and the cliffs of the Amalfi Coast — plan your Italy travel itinerary with AI and experience la dolce vita at every turn.',
     buttonText: 'Plan your Italy trip',
-    bgImage:
-      'https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1920&auto=format&fit=crop',
+    bgImage: img1,
   },
   {
     id: 2,
@@ -26,8 +30,7 @@ const slidesData = [
     description:
       'Experience the perfect blend of ultra-modern technology and timeless traditions, from bustling Tokyo to peaceful Kyoto temples.',
     buttonText: 'Plan your Japan trip',
-    bgImage:
-      'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1920&auto=format&fit=crop',
+    bgImage: img2,
   },
   {
     id: 3,
@@ -36,8 +39,7 @@ const slidesData = [
     description:
       "Shibuya Crossing's controlled chaos, Asakusa's centuries-old shrines, and the best food city on earth. Plan your Tokyo trip with AI — Michelin sushi to seven-seat ramen counters, all on your terms.",
     buttonText: 'Plan your Tokyo trip',
-    bgImage:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_qPWHxbPvDNFAHDIysojSq9IFEc_agJABQ23237I-g&s=10',
+    bgImage: img3,
   },
   {
     id: 4,
@@ -46,8 +48,7 @@ const slidesData = [
     description:
       "From the boulevards of Paris to the lavender fields of Provence and the glamour of the Riviera — your personalized France travel itinerary starts with a single conversation.",
     buttonText: 'Plan your France trip',
-    bgImage:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbTbMAA0N-ptpe8G3I1FyWSQmZZV-vLxJ6cmO-kWytYR9EyzOPG19QgQ&s=10',
+    bgImage: img4,
   },
   {
     id: 5,
@@ -56,8 +57,7 @@ const slidesData = [
     description:
       "From the boulevards of Paris to the lavender fields of Provence and the glamour of the Riviera — your personalized France travel itinerary starts with a single conversation.",
     buttonText: 'Plan your Spain trip',
-    bgImage:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaEFtqWTJvsT2zSNt5i9_nuTt00UncpbicuYcUQ-Z39w&s=10',
+    bgImage: img5,
   },
 ];
 

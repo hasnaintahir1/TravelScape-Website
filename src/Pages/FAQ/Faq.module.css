@@ -1,0 +1,160 @@
+/* Container & Header */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F9F6F0;
+  padding: 2.5rem 1rem; /* Mobile par padding kam ki hai */
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 48rem;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.subTitle {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #737373;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Fluid Typography: Mobile par 1.75rem, Desktop par 2.5rem */
+.title {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-family: Georgia, serif;
+  color: #171717;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.description {
+  color: #525252;
+  font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+  line-height: 1.5;
+}
+
+/* Sections & Accordion */
+.wrapper {
+  max-width: 48rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.categoryTitle {
+  font-size: clamp(1.1rem, 3vw, 1.25rem);
+  font-family: Georgia, serif;
+  color: #171717;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.75rem; /* Mobile par thoda sharp rounded edges */
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: #d4d4d4;
+}
+
+.button {
+  width: 100%;
+  text-align: left;
+  padding: 0.875rem 1rem; /* Mobile tap area optimized */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 0.75rem;
+}
+
+.question {
+  font-weight: 500;
+  color: #262626;
+  font-size: clamp(0.875rem, 2.5vw, 0.95rem);
+  line-height: 1.4;
+}
+
+.icon {
+  font-size: 0.7rem;
+  color: #737373;
+  transition: transform 0.25s ease-in-out;
+  display: inline-block;
+  flex-shrink: 0; /* Icon wrap na ho */
+}
+
+.iconRotated {
+  transform: rotate(180deg);
+}
+
+.answer {
+  color: #525252;
+  font-size: clamp(0.8rem, 2.2vw, 0.875rem);
+  line-height: 1.6;
+  border-top: 1px solid #f5f5f5;
+  padding: 0.75rem 1rem 1rem 1rem;
+  margin: 0;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Desktop Styles Adjustment */
+@media (min-width: 640px) {
+  .container {
+    padding: 4rem 1rem;
+  }
+  
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .section {
+    margin-bottom: 2.5rem;
+  }
+
+  .card {
+    border-radius: 1rem;
+  }
+
+  .button {
+    padding: 1.1rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .answer {
+    padding: 0.85rem 1.5rem 1.25rem 1.5rem;
+  }
+}

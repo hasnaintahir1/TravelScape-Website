@@ -80,10 +80,10 @@ const ThreadRoot = () => {
       <ThreadPrimitive.Viewport
         turnAnchor="top"
         data-slot="aui_thread-viewport"
-       className="relative flex flex-1 w-full flex-col items-center overflow-x-hidden overflow-y-auto scroll-smooth overscroll-contain"
+        className="relative flex flex-1 w-full flex-col items-center overflow-x-hidden overflow-y-auto scroll-smooth overscroll-contain"
       >
         <div className="mx-auto flex w-full max-w-(--thread-max-width) min-h-full flex-col items-center px-4 pt-24 pb-44">
-          
+
           {/* Welcome Screen (Only shows on new empty chat) */}
           <AuiIf condition={isNewChatView}>
             <div className="flex w-full flex-1 flex-col items-center justify-center my-auto py-6">

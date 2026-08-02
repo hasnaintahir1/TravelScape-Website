@@ -1,17 +1,19 @@
-import React from 'react';
+import React  from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 import logoImg from '../../assets/footerLogo.png';
 
 const Footer = () => {
+
   return (
+
     <footer className={styles.footer}>
       <div className={styles.container}>
-        
+
         {/* Top Grid Section */}
         <div className={styles.topGrid}>
-          
+
           {/* Brand Info */}
           <div className={styles.brandColumn}>
             <Link to="/" className={styles.logoLink}>
